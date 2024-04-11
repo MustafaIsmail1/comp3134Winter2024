@@ -1,0 +1,64 @@
+root@comp3134Winter2024:~# nmap google.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-04-09 02:26 UTC
+Nmap scan report for google.com (142.251.41.78)
+Host is up (0.0016s latency).
+Other addresses for google.com (not scanned): 2607:f8b0:400b:804::200e
+rDNS record for 142.251.41.78: yyz10s20-in-f14.1e100.net
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 4.91 seconds
+root@comp3134Winter2024:~# nmap 80 google.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-04-09 02:27 UTC
+Nmap scan report for google.com (142.251.41.78)
+Host is up (0.012s latency).
+Other addresses for google.com (not scanned): 2607:f8b0:400b:804::200e
+rDNS record for 142.251.41.78: yyz10s20-in-f14.1e100.net
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 2 IP addresses (1 host up) scanned in 6.13 seconds
+root@comp3134Winter2024:~# nmap 80-22  google.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-04-09 02:27 UTC
+Failed to resolve "80-22".
+Stats: 0:00:02 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 18.00% done; ETC: 02:27 (0:00:09 remaining)
+Nmap scan report for google.com (142.251.41.78)
+Host is up (0.0017s latency).
+Other addresses for google.com (not scanned): 2607:f8b0:400b:804::200e
+rDNS record for 142.251.41.78: yyz10s20-in-f14.1e100.net
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 4.60 seconds
+root@comp3134Winter2024:~# nmap 80-22 google.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-04-09 02:27 UTC
+Failed to resolve "80-22".
+Nmap scan report for google.com (142.251.41.78)
+Host is up (0.00068s latency).
+Other addresses for google.com (not scanned): 2607:f8b0:400b:804::200e
+rDNS record for 142.251.41.78: yyz10s20-in-f14.1e100.net
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 4.59 seconds
+root@comp3134Winter2024:~# nmap -F google.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-04-09 02:28 UTC
+Nmap scan report for google.com (142.251.41.78)
+Host is up (0.0022s latency).
+Other addresses for google.com (not scanned): 2607:f8b0:400b:804::200e
+rDNS record for 142.251.41.78: yyz10s20-in-f14.1e100.net
+Not shown: 98 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 1.79 seconds

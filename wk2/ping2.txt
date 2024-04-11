@@ -1,0 +1,25 @@
+root@comp3134Winter2024:~# ping youtube.com
+PING youtube.com (142.251.33.174) 56(84) bytes of data.
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=1 ttl=120 time=1.53 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=2 ttl=120 time=0.565 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=3 ttl=120 time=0.522 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=4 ttl=120 time=0.617 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=5 ttl=120 time=0.581 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=6 ttl=120 time=0.595 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=7 ttl=120 time=0.560 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=8 ttl=120 time=0.671 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=9 ttl=120 time=0.449 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=10 ttl=120 time=0.592 ms
+^C
+--- youtube.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9016ms
+rtt min/avg/max/mdev = 0.449/0.668/1.530/0.292 ms
+root@comp3134Winter2024:~# ping youtube.com -w 3
+PING youtube.com (142.251.33.174) 56(84) bytes of data.
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=1 ttl=120 time=0.546 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=2 ttl=120 time=0.671 ms
+64 bytes from yyz10s17-in-f14.1e100.net (142.251.33.174): icmp_seq=3 ttl=120 time=0.578 ms
+
+--- youtube.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 0.546/0.598/0.671/0.053 ms
